@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        ::-webkit-scrollbar{
+            display: none;
+        }
+        body{
+            margin:0;
+            padding:0;
+        }
+    canvas{
+        border:1px solid #ccc;
+        /* height: 100%;
+        width:100%; */
+    }
+    .buttons , .message{
+        position:absolute;
+        top:0;
+        float:right;right:0;
+        padding:.3rem;
+    }
+    .buttons , .message{
+        display: none;
+    }
+    .btn{
+        display:inline-block;
+        padding:.5rem;
+        border:none;
+        background: rgb(161, 80, 80);
+        color:white;
+        border-radius:.3rem;
+    }
+    @media only screen and (max-width:600px){
+        .buttons{
+            display:inline-block;
+        }
+    }
+    @media only screen and (min-width:601px){
+        .message{
+            display:inline-block;
+        }
+    }
+    </style>
+    <title>HTML5 Canvas : Basic 01</title>
+</head>
+<body>
+    <canvas>
+
+    </canvas>
+    <div class="buttons">
+        <button class="btn" onclick="waitBtn()" type="button">Reset</button>
+        <button class="btn" onclick="drawBtn()" type="button">Wait</button>
+    </div>
+    <div class="message">
+        Press <strong>ALT KEY</strong> to Draw.
+    </div>
+    <script src="draw.js"></script>
+</body>
+</html>
