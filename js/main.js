@@ -1,7 +1,8 @@
-// // console.log('Linked')
+/**
+ * Inspired by some Youtube Tutorial
+ */
 
 var canvas = document.querySelector('canvas');
-console.log(canvas);
 
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
@@ -64,19 +65,19 @@ function Circle(x,y,dx,dy,radius){
         c.beginPath();
         c.arc(this.x , this.y , this.radius , 0 , Math.PI * 2 , false);
         c.strokeStyle = "dodgerblue";
-        c.stroke();  
+        c.stroke();
     }
     this.update = function(){
         if(this.x+this.radius > innerWidth ||this.x-this.radius < 0){
             this.dx = -this.dx ;
         }
-    
+
         this.x +=this.dx;
         if(this.y+this.radius > innerHeight ||this.y-this.radius < 0){
             this.dy = -this.dy ;
         }
-    
-        this.y +=this.dy; 
+
+        this.y +=this.dy;
     }
 }
 
@@ -109,5 +110,5 @@ var dy =  (Math.random() - 0.5) * 10;
 
     y +=dy;
  }
- 
+
  animate();

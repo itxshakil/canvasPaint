@@ -33,42 +33,19 @@
         width:100vw;
         overflow: hidden;
     }
-    .message{
-        position:absolute;
-        top:0;
-        right:2rem;
-        padding:.3rem;
-        display: none;
-    }
-    input[type=color]{
-        position:fixed;
-        top:5px;
-        right:5px;
-        height:1.5rem;
-        width:1.5rem;
-    }
     a{
         position:fixed;
         bottom:5px;
         right:5px;
         text-decoration:none;
     }
-    @media only screen and (min-width:610px){
-        .message{
-            display:inline-block;
-        }
-    }
     </style>
-    <script src="js/app.js" defer></script>
+    <script src="js/main.js" defer></script>
     <title>HTML5 Draw</title>
 </head>
 <body>
     <canvas>
     </canvas>
-    <p class="message" role="note">
-        Hold <strong>ALT KEY</strong> & move Cursor to Draw.
-    </p>
-    <input type="color" name="color" id="color" aria-label="Select color">
-    <a href="animation.html">Animation</a>
+    <a href="index.html">Draw</a>
 </body>
 </html>
