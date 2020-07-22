@@ -48,10 +48,19 @@
         width:1.5rem;
     }
     a{
+        text-decoration:none;
+    }
+    .animation{
         position:fixed;
         bottom:5px;
         right:5px;
-        text-decoration:none;
+    }
+    .credits{
+        position:fixed;
+        bottom:2rem;
+        right:5px;
+        writing-mode:vertical-rl;
+        transform:rotate(180deg);
     }
     @media only screen and (min-width:610px){
         .message{
@@ -69,6 +78,7 @@
         Hold <strong>ALT KEY</strong> & move Cursor to Draw.
     </p>
     <input type="color" name="color" id="color" aria-label="Select color">
-    <a href="animation.html">Animation</a>
+    <a href="animation.html" class="animation">Animation</a>
+    <p class="credits">Another from <a href="https://shakil.netlify.app">Shakil Alam</a></p>
 </body>
 </html>

@@ -34,10 +34,19 @@
         overflow: hidden;
     }
     a{
+        text-decoration:none;
+    }
+    .draw{
         position:fixed;
         bottom:5px;
         right:5px;
-        text-decoration:none;
+    }
+    .credits{
+        position:fixed;
+        bottom:2rem;
+        right:5px;
+        writing-mode:vertical-rl;
+        transform:rotate(180deg);
     }
     </style>
     <script src="js/main.js" defer></script>
@@ -46,6 +55,7 @@
 <body>
     <canvas>
     </canvas>
-    <a href="index.html">Draw</a>
+    <a href="index.html" class="draw">Draw</a>
+    <p class="credits">Another from <a href="https://shakil.netlify.app">Shakil Alam</a></p>
 </body>
 </html>
