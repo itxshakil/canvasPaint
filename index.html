@@ -4,19 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta
-      name="keywords"
-      content="draw, canvas, htmk5, animation, typescript, javascript project"
-    />
-    <meta name="subject" content="Shakil Alam | HTML5 Draw" />
+    <meta name="description"
+        content="An HTML5 Draw Web App developed with Typescript By Shakil Alam" />
+    <meta name="keywords"
+        content="draw, canvas, htmk5, animation, typescript, javascript project" />
+    <meta name="subject" content="Canvas Draw" />
     <meta name="language" content="en" />
     <meta name="rating" content="General" />
+    <meta name="url" content="https://canvasdraw.netlify.app" />
+    <meta name="identifier-URL" content="https://canvasdraw.netlify.app" />
     <meta name="owner" content="Shakil Alam" />
     <meta name="author" content="Shakil Alam , itxshakil@gmail.com" />
     <meta name="og:title" content="HTML5 Draw" />
+    <meta name="og:url" content="https://canvasdraw.netlify.app" />
+    <meta name="og:url" content="https://canvasdraw.netlify.app" />
+    <meta name="og:url" content="https://canvasdraw.netlify.app/" />
+    <meta name="og:site_name" content="HTML 5 Draw" />
+    <meta name="og:description"
+        content="An HTML5 Draw Web App developed with Typescript By Shakil Alam" />
     <meta name="og:email" content="itxshakil@gamil.com" />
     <meta name="og:country-name" content="India" />
     <meta name="theme-color" content="gray" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="gray" />
+    <meta name="apple-mobile-web-app-title" content="HTML5 Draw" />
+    <meta name="msapplication-TitleImage" content="/assets/images/icons-192.png" />
+    <meta name="msapplication-TitleColor" content="gray" />
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon" />
+    <link rel="manifest" href="/manifest.json">
     <style>
     ::-webkit-scrollbar{
         display: none;
@@ -80,5 +95,15 @@
     <input type="color" name="color" id="color" aria-label="Select color">
     <a href="animation.html" class="animation">Animation</a>
     <p class="credits">Another from <a href="https://shakil.netlify.app">Shakil Alam</a></p>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('/sw.js').then(function (registration) {
+                }, function (err) {
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+            });
+        }
+    </script>
 </body>
 </html>
